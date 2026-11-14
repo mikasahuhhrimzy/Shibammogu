@@ -279,7 +279,7 @@ memories.forEach((memory, index) => {
     card.innerHTML = `
         <div class="envelope" id="env${number}">
             <img class="photo"
-                 src="Photos/photo${number}.jpg"
+                 src="photo${number}.jpg"
                  alt="Shibam's photo">
         </div>
         <span>Letter ${number} 💌</span>
@@ -296,7 +296,7 @@ function openLetter(number) {
 
     setTimeout(() => {
         document.getElementById("bigPhoto").src =
-            "Photos/photo" + number + ".jpg";
+            "photo" + number + ".jpg";
 
         document.getElementById("photoTitle").innerText =
             memories[number - 1][0];
