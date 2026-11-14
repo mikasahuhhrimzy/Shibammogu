@@ -246,7 +246,7 @@ button {
 
 <div class="modal" id="modal">
     <div class="letter">
-        <img id="bigPhoto" src="" alt="A special photo">
+        <img id="bigphoto" src="" alt="A special photo">
         <h2 id="photoTitle"></h2>
         <p id="caption"></p>
         <button onclick="closeLetter()">Close 💗</button>
@@ -295,7 +295,7 @@ function openLetter(number) {
     envelope.classList.add("open");
 
     setTimeout(() => {
-        document.getElementById("bigPhoto").src =
+        document.getElementById("bigphoto").src =
             "photo" + number + ".jpg";
 
         document.getElementById("photoTitle").innerText =
